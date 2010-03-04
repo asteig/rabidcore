@@ -23,7 +23,7 @@ class CurrentUser extends Base {
 
 	/** User-specific methods. **/
 	public static function login($login, $pass) {
-		$user = Query::findOne('user', Array('email'=>$login, 'password'=>User::hashPassword($pass)));
+		$user = Query::findOne('user', Array('login'=>$login, 'password'=>User::hashPassword($pass)));
 		if (!$user) return false;
 		self::set('id', $user->id);
 		return $user;
