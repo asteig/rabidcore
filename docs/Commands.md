@@ -1,7 +1,7 @@
 Commands
 ======================
 
-The Commands class and its children define the default behaviours of all models.  It is not necessary to extend this class unless you want to change the default actions of a DataModel, or create actions for a route that does not correspond to a model.
+The Commands class and its children define the default behaviors of all models.  It is not necessary to extend this class unless you want to change the default actions of a DataModel, or create actions for a route that does not correspond to a model.
 
 Command methods are called by the Router based on the request URI.  See the Router documentation for more details.
 
